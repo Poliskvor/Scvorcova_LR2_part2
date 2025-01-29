@@ -7,7 +7,7 @@
 using namespace std;
 double B;
 
-int enterVolume(){
+void enterVolume(){
     string raw_input;
     getline(cin, raw_input);
     while (!UserInput(raw_input)){
@@ -30,14 +30,14 @@ int main() {
 
         switch (choice) {
             case 1:
-                cout << "Введите объём информации в байтах: " << endl;
+                cout << "Введите объём информации в байтах: ";
                 enterVolume();
                 break;
             case 2:
                 cout << "Выразить объем B в мегабайтах: " << convertToMegabytes(B) << endl;
                 break;
             case 3:
-                cout << "Выразить объем B в гигабайтах: " <<  convertToGigabytes(B) << endl;
+                cout << "Выразить объем B в гигабайтах: " << convertToGigabytes(B) << endl;
                 break;
             case 0:
                 cout << "Выход из программы." << endl;

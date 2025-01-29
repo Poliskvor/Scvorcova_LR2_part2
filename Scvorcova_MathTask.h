@@ -1,3 +1,6 @@
+#ifndef _SCVORCOVA_MATHTASK_H
+#define _SCVORCOVA_MATHTASK_H
+
 #include <cstring>
 #include <cmath>
 using namespace std;
@@ -20,5 +23,4 @@ bool UserInput(string input) {
     { return false; }
     return true;
 }
-
 #endif
