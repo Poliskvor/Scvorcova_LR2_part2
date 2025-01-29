@@ -18,6 +18,7 @@ bool UserInput(string input) {
     if (input.empty()) return false;
     try {
         int number = stoi(input);
+        if (stoi(input) < 0) return false;
     }
     catch (...) //если возникла ошибка в блоке try
     { return false; }
